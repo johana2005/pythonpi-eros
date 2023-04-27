@@ -2,21 +2,21 @@
 # print(type(num))
 # num="sena"
 # print(type(num))
-num=1
+num=1 # son las variables 
 cont=0
 sum=0
 menor=1000000
 mayor=0
-while num!=0:
+while num!=0: #para realizar la comparacion
     num=int(input('ingrese numero'))
-    cont=cont+1
+    cont=cont+1 
     sum=sum+num
     if num>mayor:
         mayor=num
     if num<menor and num!=0:
         menor=num
 
-print(f'fueron ingresados {cont-1} numeros')
+print(f'fueron ingresados {cont-1} numeros') # va a mostrar cada uno 
 print(f'La suma es {sum}')
 print(f'El promedio es {sum/(cont-1)}')
 print(f'El mayor es {mayor}')
