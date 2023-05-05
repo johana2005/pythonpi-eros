@@ -23,3 +23,15 @@ print(sum)
 print(prom)
 print (f"su numero mayor es:{mayor}  y  su numero menor es: {menor}")
 print ()
+
+lista.sort()
+if tam % 2 !=0:
+   m=(tam//2)
+   print("la mediana es ",lista[m])
+else:
+   m=(tam//2)
+   m=(lista[m-1])+(lista[m])
+   m/=2
+   print(f"la mediana es: {m}")
+
+   
