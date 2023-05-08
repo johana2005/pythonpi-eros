@@ -19,8 +19,8 @@ for i in range (tam):
     prom=sum/tam
     
 print(lista)
-print(sum)
-print(prom)
+print(f"la suma es:{sum}")
+print(f"El promedio es: {prom}")
 print (f"su numero mayor es:{mayor}  y  su numero menor es: {menor}")
 print ()
 
@@ -33,5 +33,9 @@ else:
    m=(lista[m-1])+(lista[m])
    m/=2
    print(f"la mediana es: {m}")
+if  sum % lista[m]:
+
+   print()
+
 
    
