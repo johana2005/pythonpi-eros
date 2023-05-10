@@ -4,6 +4,8 @@ tam=random.randrange(20,30)
 o=0
 promedio=0
 suma=0
+suma1=0
+promedio1=0
 calificacion=[round(random.random()*5,1)for i in range(tam)]
 print(calificacion)
 for p in range(tam):
@@ -37,7 +39,7 @@ print ("La suma de los aprobados es: ",suma)
 promedio= suma / len(aprobo)
 print("El promedio de los reprobados es: ",promedio)
 for f in reprobo:
-   suma= suma + f
-print("La suma de los reprobados es: ",suma)
-promedio= suma / len(reprobo)
-print("El promedio de los reprobados es: ", promedio)
+   suma1= suma1 + f
+print("La suma de los reprobados es: ",suma1)
+promedio1= suma1 / len(reprobo)
+print("El promedio de los reprobados es: ", promedio1)
