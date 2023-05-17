@@ -9,38 +9,54 @@ def ordenAscendente(lista):
     for i in range(len(lista)):
         for j in range(i+1,len(lista)):
             if lista[i]>lista[j]:
-                aux=lista[i]
-                lista[i]=lista[j]
-                lista[j]=aux
+               aux=lista[i]
+               lista[i]=lista[j]
+               lista[j]=aux
     return lista 
+
+#def cuartilLista(lista):
+ #   total=[]
+    # ordenAscendente(cuartil1)
+  #  cuartil=1*((len(lista)+1)/4)
+   # total.append(cuartil)
+    #cuartil=2*((len(lista)+1)/4)
+    #total.append(cuartil)
+    #cuartil=3*((len(lista)+1)/4)
+    #total.append(cuartil)
+    #cuartil=4*((len(lista)+1)/4)
+    #total.append(cuartil)
+    #return total
 
 def cuartilLista(lista):
     total=[]
-    # ordenAscendente(cuartil1)
-    cuartil=1*((len(lista)+1)/4)
-    total.append(cuartil)
-    cuartil=2*((len(lista)+1)/4)
-    total.append(cuartil)
-    cuartil=3*((len(lista)+1)/4)
-    total.append(cuartil)
-    cuartil=4*((len(lista)+1)/4)
-    total.append(cuartil)
+    for i in range(4):
+        i+=1
+        cuartil=i*((len(lista)+1)/4)
+        total.append(cuartil)
     return total
 
 
 def quintilLista(lista):
     total=[]
-    quintil=1*((len(lista)+1)/5)
-    total.append(quintil)
-    quintil=2*((len(lista)+1)/5)
-    total.append(quintil)
-    quintil=3*((len(lista)+1)/5)
-    total.append(quintil)
-    quintil=4*((len(lista)+1)/5)
-    total.append(quintil)
-    quintil=5*((len(lista)+1)/5)
-    total.append(quintil)
+    for i in range(5):
+        i+=1
+        quintil=i*((len(lista)+1)/5)
+        total.append(quintil)
     return total
+
+#def quintilLista(lista):
+   # total=[]
+   #quintil=1*((len(lista)+1)/5)
+    #total.append(quintil)
+    #quintil=2*((len(lista)+1)/5)
+    #total.append(quintil)
+    #quintil=3*((len(lista)+1)/5)
+    #total.append(quintil)
+    #quintil=4*((len(lista)+1)/5)
+    #total.append(quintil)
+    #quintil=5*((len(lista)+1)/5)
+    #total.append(quintil)
+    #return total
     
 def sumaLista(lista):
     sum=0
