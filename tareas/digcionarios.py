@@ -4,11 +4,11 @@ iccionario = {
     'cuarto':'cama',
     "numero":"567491"}
 
-def menKey(key, diccionario):
-    if key not in diccionario:
+def menKey(key, diccion):
+    if key not in diccion:
         return f" {key} no existe en el diccionario"
     else:
-        s = diccionario[key]
+        s = diccion[key]
         t = type(s)
         if t is str:
             t = "Cadena"
@@ -18,4 +18,4 @@ def menKey(key, diccionario):
             t = "Flotante"
         return f"El valor de {key} es: {s} y es de tipo de dato es: {t}"
     
-print(menKey(input("Escriba la parte de la casa: "), diccionario=))
+print(menKey(input("Escriba la parte de la casa: "), diccion))
